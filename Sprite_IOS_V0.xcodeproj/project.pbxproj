@@ -17,6 +17,10 @@
 		5B580FE31B3336E9009B1656 /* Sprite_IOS_V0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FE21B3336E9009B1656 /* Sprite_IOS_V0Tests.m */; };
 		5B580FEE1B333BB6009B1656 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FED1B333BB6009B1656 /* ThirdViewController.m */; };
 		5B580FF11B333C7D009B1656 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FF01B333C7D009B1656 /* FourthViewController.m */; };
+		5B580FF41B339ABE009B1656 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FF31B339ABE009B1656 /* User.m */; };
+		5B580FF81B339C1C009B1656 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FF71B339C1C009B1656 /* Device.m */; };
+		5B580FFB1B339E45009B1656 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FFA1B339E45009B1656 /* Schedule.m */; };
+		5B580FFF1B33A56D009B1656 /* JSonCommunicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B580FFE1B33A56D009B1656 /* JSonCommunicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,15 @@
 		5B580FED1B333BB6009B1656 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		5B580FEF1B333C7D009B1656 /* FourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
 		5B580FF01B333C7D009B1656 /* FourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		5B580FF21B339ABE009B1656 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5B580FF31B339ABE009B1656 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5B580FF61B339C1C009B1656 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		5B580FF71B339C1C009B1656 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		5B580FF91B339E45009B1656 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		5B580FFA1B339E45009B1656 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		5B580FFC1B33A56D009B1656 /* JSonCommunicatorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSonCommunicatorDelegate.h; sourceTree = "<group>"; };
+		5B580FFD1B33A56D009B1656 /* JSonCommunicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSonCommunicator.h; sourceTree = "<group>"; };
+		5B580FFE1B33A56D009B1656 /* JSonCommunicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSonCommunicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,16 +103,11 @@
 		5B580FC21B3336E9009B1656 /* Sprite_IOS_V0 */ = {
 			isa = PBXGroup;
 			children = (
+				5B5810011B33A604009B1656 /* UIViewController */,
+				5B5810001B33A5ED009B1656 /* Network */,
+				5B580FF51B339ACE009B1656 /* Modeler */,
 				5B580FC71B3336E9009B1656 /* AppDelegate.h */,
 				5B580FC81B3336E9009B1656 /* AppDelegate.m */,
-				5B580FCA1B3336E9009B1656 /* FirstViewController.h */,
-				5B580FCB1B3336E9009B1656 /* FirstViewController.m */,
-				5B580FCD1B3336E9009B1656 /* SecondViewController.h */,
-				5B580FCE1B3336E9009B1656 /* SecondViewController.m */,
-				5B580FEC1B333BB6009B1656 /* ThirdViewController.h */,
-				5B580FED1B333BB6009B1656 /* ThirdViewController.m */,
-				5B580FEF1B333C7D009B1656 /* FourthViewController.h */,
-				5B580FF01B333C7D009B1656 /* FourthViewController.m */,
 				5B580FD01B3336E9009B1656 /* Main.storyboard */,
 				5B580FD31B3336E9009B1656 /* Images.xcassets */,
 				5B580FD51B3336E9009B1656 /* LaunchScreen.xib */,
@@ -132,6 +140,44 @@
 				5B580FE11B3336E9009B1656 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B580FF51B339ACE009B1656 /* Modeler */ = {
+			isa = PBXGroup;
+			children = (
+				5B580FF91B339E45009B1656 /* Schedule.h */,
+				5B580FFA1B339E45009B1656 /* Schedule.m */,
+				5B580FF61B339C1C009B1656 /* Device.h */,
+				5B580FF71B339C1C009B1656 /* Device.m */,
+				5B580FF21B339ABE009B1656 /* User.h */,
+				5B580FF31B339ABE009B1656 /* User.m */,
+				5B580FFC1B33A56D009B1656 /* JSonCommunicatorDelegate.h */,
+				5B580FFD1B33A56D009B1656 /* JSonCommunicator.h */,
+				5B580FFE1B33A56D009B1656 /* JSonCommunicator.m */,
+			);
+			name = Modeler;
+			sourceTree = "<group>";
+		};
+		5B5810001B33A5ED009B1656 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		5B5810011B33A604009B1656 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5B580FCA1B3336E9009B1656 /* FirstViewController.h */,
+				5B580FCB1B3336E9009B1656 /* FirstViewController.m */,
+				5B580FCD1B3336E9009B1656 /* SecondViewController.h */,
+				5B580FCE1B3336E9009B1656 /* SecondViewController.m */,
+				5B580FEC1B333BB6009B1656 /* ThirdViewController.h */,
+				5B580FED1B333BB6009B1656 /* ThirdViewController.m */,
+				5B580FEF1B333C7D009B1656 /* FourthViewController.h */,
+				5B580FF01B333C7D009B1656 /* FourthViewController.m */,
+			);
+			name = UIViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,8 +280,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B580FFF1B33A56D009B1656 /* JSonCommunicator.m in Sources */,
 				5B580FF11B333C7D009B1656 /* FourthViewController.m in Sources */,
+				5B580FF41B339ABE009B1656 /* User.m in Sources */,
 				5B580FCF1B3336E9009B1656 /* SecondViewController.m in Sources */,
+				5B580FFB1B339E45009B1656 /* Schedule.m in Sources */,
+				5B580FF81B339C1C009B1656 /* Device.m in Sources */,
 				5B580FEE1B333BB6009B1656 /* ThirdViewController.m in Sources */,
 				5B580FC91B3336E9009B1656 /* AppDelegate.m in Sources */,
 				5B580FCC1B3336E9009B1656 /* FirstViewController.m in Sources */,
